@@ -1,0 +1,60 @@
+.intro{
+    width: 1340px;
+    height: 650px;
+    padding: 10px;
+    margin: 0 auto; //para que quede centrado
+    position: relative;//cambiamos posicion a relativo porque normalmente son absolutas 
+    background-color: @color-claro;
+    .sombra-caja;
+    &__imagen{
+        width: 1320px;
+        position:absolute; //imagen queda ensima de neustro contenedor
+        img {
+            width: 100%;
+            height: 624px;
+            object-fit: cover;//para que mi imagen abarque todo el contenedor de la iamgen
+        }
+    }
+    &__contenido{
+        width: 50%; //siempre quede centrado
+        margin: 0 auto;
+        position: absolute; //quede encima de la imagen
+        top: 156px;
+        left: 0;
+        right: 0;//centrado siempre r y l en 0 y margin 0
+        text-align: center;//texto centrado
+        color:@color-claro;//color del texto
+    }
+    &__categoria{
+        .Oswald;
+        color: fade(@color-claro,50%);//fede reduce o da transparencia al color que definamos, y una opacidad del 50% en este caso
+    }
+    &__titulo{
+        font-family: @Fuente2; //fuente o tipo de letra
+        text-transform: uppercase; //en Mayusculas
+        .fuente(50px);
+    }
+    &__autor{
+        width: 50px;
+        margin: 0 auto;
+        position: absolute;
+        top: 400px; //quede mas abajo del titulo
+        left: 0;
+        right: 0;
+        color: @color-claro; //blanco
+        img {
+            width: 60px;
+            height: 50px;
+            float: left; //alineada a la izquierda del nombre del autor
+            padding-right: 10px; //tenga un espasio 
+            border-radius: 10em; //tenga sus bordes de forma circular
+        }
+        span{
+            display: inline-block; //queden bien alineados
+        }
+        &-titulo{
+            color: fade(@color-claro,50%);
+        }
+    }
+}
+

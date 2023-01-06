@@ -1,0 +1,37 @@
+@color-primario: #333333; //cramos una variable
+@color-claro: #FFFFFF;
+@color-oscuro: #070101;
+@color-secundario: #8841da;
+@color-variacion:#012179;
+@Fuente1: 'Lato',sans-serif;
+@Fuente2: 'Oswald',sans-serif;
+@fuente-base: 18px;
+
+.sombra-caja {
+    box-shadow: 0px 5px 15px 0px fade(@color-primario, 50%);
+}
+
+.Oswald{
+    font-family: @Fuente2;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.fuente(@font-zice) {
+    font-size: @font-zice;
+    line-height: @font-zice + 10%;
+}//es una funsion 
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: @Fuente1; //sans-serif es para prevenir que todo ande bien
+    color: @color-oscuro;
+    .fuente(@fuente-base);
+}
+h1,h2,h3{
+    margin: 0;
+    .Oswald;
+}
