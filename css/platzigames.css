@@ -140,6 +140,7 @@ h3 {
 }
 .caja__contenido {
   padding: 25px;
+  max-height: 190px;
   background-color: #8841da;
 }
 .caja span {
@@ -147,6 +148,10 @@ h3 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+}
+.caja p {
+  font-size: 15px;
+  line-height: 25px;
 }
 .caja a {
   text-decoration: none;
