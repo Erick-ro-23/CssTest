@@ -2,9 +2,11 @@
     width: 1340px;
     height: 650px;
     padding: 10px;
+    top: 20px;
+    
     margin: 0 auto; //para que quede centrado
     position: relative;//cambiamos posicion a relativo porque normalmente son absolutas 
-    background-color: @color-claro;
+    background-color: @color-secundario;
     .sombra-caja;
     &__imagen{
         width: 1320px;
@@ -28,14 +30,16 @@
     &__categoria{
         .Oswald;
         color: fade(@color-claro,50%);//fede reduce o da transparencia al color que definamos, y una opacidad del 50% en este caso
+        .fuente(12px);
     }
     &__titulo{
         font-family: @Fuente2; //fuente o tipo de letra
         text-transform: uppercase; //en Mayusculas
-        .fuente(50px);
+        .fuente(40px);
+        line-height: normal;
     }
     &__autor{
-        width: 50px;
+        width: 150px;
         margin: 0 auto;
         position: absolute;
         top: 400px; //quede mas abajo del titulo
@@ -50,10 +54,16 @@
             border-radius: 10em; //tenga sus bordes de forma circular
         }
         span{
-            display: inline-block; //queden bien alineados
+            display:inline-block; //queden bien alineados
+            line-height:15px;
         }
         &-titulo{
+            .Oswald;
             color: fade(@color-claro,50%);
+            font-size: small;
+        }
+        &-nombre{
+        float: none;
         }
     }
 }
